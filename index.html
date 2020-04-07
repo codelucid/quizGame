@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COUNTDOWN QUIZ</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-success">
+            <span class="navbar-brand mb-0 h1 justify-content-center">COOP'S COUNTDOWN QUIZ GAME!!!</span>
+        </nav>   
+        <h1 style="text-align: center;">"Shall We Play A Game?!"...</h1>
+    </header>
+
+    <main>
+       
+      <div class="timer">Time: <span id="time">0</span></div>
+
+      <div class="wrapper">
+        <div id="start-screen" class="start">
+          <h1>Coding Quiz Challenge</h1>
+          <p>
+            Try to answer the following code-related questions within the time
+            limit. Keep in mind that incorrect answers will penalize your
+            score/time by ten seconds!
+          </p>
+          <button id="start">Start Quiz</button>
+        </div>
+  
+        <div id="questions" class="hide">
+          <h2 id="question-title"></h2>
+          <div id="choices" class="choices"></div>
+        </div>
+  
+        <div id="end-screen" class="hide">
+          <h2>All done!</h2>
+          <p>Your final score is <span id="final-score"></span>.</p>
+          <p>
+            Enter initials: <input type="text" id="initials" max="3" />
+            <button id="submit">Submit</button>
+          </p>
+        </div>
+  
+        <div id="feedback" class="feedback hide"></div>
+      </div>
+    
+</main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src=./indexLogic.js></script>
+  </body>
+</html>
